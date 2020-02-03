@@ -1,0 +1,4 @@
+{
+    "main": "./views/homePage",
+    "randYan": "./views/randYanPage/randYanPage"
+}

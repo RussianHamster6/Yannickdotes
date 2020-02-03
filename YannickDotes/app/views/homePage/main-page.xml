@@ -1,0 +1,43 @@
+<!--
+The markup in NativeScript apps contains a series of user interface components, each
+of which NativeScript renders with a platform-specific iOS or Android native control.
+You can find a full list of user interface components you can use in your app at
+https://docs.nativescript.org/ui/components.
+-->
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <!--
+    The ActionBar is the NativeScript common abstraction over the Android ActionBar and iOS NavigationBar.
+    http://docs.nativescript.org/ui/action-bar
+    -->
+    <ActionBar title="YannickDotes" icon=""></ActionBar>
+
+    <StackLayout class="p-20">
+        <Label textWrap = "true" text="Welcome to Yannickdotes" class="h1text-center"/>
+        
+        <Button tap="toRandYan" class="-primary">
+            <FormattedString>
+                <Span text="Random Yannickdote"></Span>
+            </FormattedString>
+        </Button>
+
+        <Button tap="{{ nTap }}" class="-primary">
+            <FormattedString>
+                <Span text="Yannickdote of the Day"></Span>
+            </FormattedString>
+        </Button>
+
+        <Button tap="{{ nTap }}" class="-primary">
+            <FormattedString>
+                <Span text="The Archive"></Span>
+            </FormattedString>
+        </Button>
+
+        <Button tap="{{ nTap }}" class="-primary">
+            <FormattedString>
+                <Span text="Add Yannickdote"></Span>
+            </FormattedString>
+        </Button>
+
+        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+    </StackLayout>
+</Page>

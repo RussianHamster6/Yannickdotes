@@ -1,0 +1,6 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+    <StackLayout>
+        <label textWrap = "true" text = "Random Yannickdote" class="h1text-center"></label>
+        <label class = "contentText" id = "randYanTxt" textWrap = "true" ></label>
+    </StackLayout>
+</Page>
