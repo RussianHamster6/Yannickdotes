@@ -15,4 +15,5 @@ exports.pageLoaded = function (args) {
         page.getViewById("randYanTxt").text = http.response.body;
     }
     http.send();
+    
 };
