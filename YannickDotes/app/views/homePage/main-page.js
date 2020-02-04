@@ -14,5 +14,12 @@ function toRandYan(args){
     page.frame.navigate(routes.randYan);
 }
 
+function toAddYan(args){
+    const page = args.object.page;
+
+    page.frame.navigate(routes.addYan);
+}
+
+exports.toAddYan = toAddYan;
 exports.toRandYan = toRandYan;
 exports.onNavigatingTo = onNavigatingTo;

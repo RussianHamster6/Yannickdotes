@@ -32,7 +32,7 @@ https://docs.nativescript.org/ui/components.
             </FormattedString>
         </Button>
 
-        <Button tap="{{ nTap }}" class="-primary">
+        <Button tap="toAddYan" class="-primary">
             <FormattedString>
                 <Span text="Add Yannickdote"></Span>
             </FormattedString>

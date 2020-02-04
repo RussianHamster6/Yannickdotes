@@ -1,4 +1,6 @@
 {
-    "main": "./views/homePage",
-    "randYan": "./views/randYanPage/randYanPage"
+    "main": "./views/homePage/main-page",
+    "randYan": "./views/randYanPage/randYanPage",
+    "addYan": "./views/addYanPage/addYanPage",
+    "underDev": "./views/underDevPage/underDevPage"
 }

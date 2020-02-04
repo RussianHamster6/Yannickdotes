@@ -15,9 +15,13 @@ Button {
     margin-top: 10%;
 }
 
+span{
+    color:black;
+}
+
 button:active{
     border-width: 0;
-}
+} 
 
 .h1text-center{
     width: 70%;
@@ -47,3 +51,9 @@ button:active{
     -webkit-animation: spin 2s linear infinite; /* Safari */
     animation: spin 2s linear infinite;
   }
+
+.inputText{
+    margin-top: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}

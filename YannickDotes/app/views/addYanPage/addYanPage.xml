@@ -1,0 +1,11 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+    <StackLayout>
+        <label textWrap = "true" text = "New Yannickdote" class="h1text-center"></label>
+        <textView text= "Add Dote Here" class="inputText" id="inpText"></textView>
+        <Button tap="submitDote" class="-primary">
+            <FormattedString>
+                <Span text="Submit Yannickdote"></Span>
+            </FormattedString>
+        </Button>
+    </StackLayout>
+</Page>
