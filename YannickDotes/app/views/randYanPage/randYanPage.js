@@ -13,7 +13,7 @@ exports.pageLoaded = function (args) {
     http.onreadystatechange = function() {
         loader.hide();
         page.getViewById("randYanTxt").text = http.response.body;
-    }
+    };
     http.send();
 
 };

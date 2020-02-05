@@ -1,5 +1,6 @@
 const createViewModel = require("./main-view-model").createViewModel;
 const routes = require("~/routes.json");
+var dialogs = require("tns-core-modules/ui/dialogs");
 
 function onNavigatingTo(args) {
     
@@ -20,6 +21,13 @@ function toAddYan(args){
     page.frame.navigate(routes.addYan);
 }
 
+function displayPopup(){
+    dialogs.alert("Hello").then(function(){
+        console.log("dialog closed");
+    });
+}
+
+exports.displayPopup = displayPopup;
 exports.toAddYan = toAddYan;
 exports.toRandYan = toRandYan;
 exports.onNavigatingTo = onNavigatingTo;

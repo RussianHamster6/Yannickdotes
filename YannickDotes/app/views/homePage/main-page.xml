@@ -20,7 +20,7 @@ https://docs.nativescript.org/ui/components.
             </FormattedString>
         </Button>
 
-        <Button tap="{{ nTap }}" class="-primary">
+        <Button tap="displayPopup" class="-primary">
             <FormattedString>
                 <Span text="Yannickdote of the Day"></Span>
             </FormattedString>

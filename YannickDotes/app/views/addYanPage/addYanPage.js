@@ -1,6 +1,5 @@
 var LoadingIndicatior = require("@nstudio/nativescript-loading-indicator").LoadingIndicator;
 var dialogs = require("tns-core-modules/ui/dialogs");
-var view = require("tns-core-modules/ui/core/view");
 
 var page;
 
@@ -8,7 +7,7 @@ exports.pageLoaded = function (args) {
     page = args.object;
 };
 
-function submitDote(){
+async function submitDote(){
 
     var inpText = page.getViewById("inpText");
     var dote = inpText.text;
@@ -26,11 +25,16 @@ function submitDote(){
     http.onreadystatechange = function() {
         loader.hide();
         if(http.response.statusCode == 200){
-            dialogs.alert(http.response.body);
+            dialogs.alert("success").then(function() {
+                console.log("Dialog Closed");
+            });
         }
-        else {
-            dialogs.alert(error);
-        }
+    };
+    http.onerror = function(){
+        loader.hide();
+        dialogs.alert(http.response).then(function(){
+            console.log("Dialog Closed");
+        });
     }
     http.send(param);
 
